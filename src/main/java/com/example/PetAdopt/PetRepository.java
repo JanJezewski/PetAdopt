@@ -5,6 +5,5 @@ import java.util.Optional;
 public interface PetRepository {
 
 
-
     Optional<Object> findByName(String name);
 }

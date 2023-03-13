@@ -17,8 +17,8 @@ class PetControler {
         this.petService = petService;
     }
 
-     @PutMapping("/{name}")
-        Pet findByName(@PathVariable String name, @Validated(value = Pet.FindByName.class) @RequestBody Pet pet) {
-            return (Pet) petService.findByName(name, pet);
-        }
+    @PutMapping("/{name}")
+    Pet findByName(@PathVariable String name, @Validated(value = Pet.FindByName.class) @RequestBody Pet pet) {
+        return (Pet) petService.findByName(name, pet);
+    }
 }

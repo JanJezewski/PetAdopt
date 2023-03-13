@@ -16,7 +16,7 @@ public class PetService {
     }
 
     Pet findByName(String name, Pet pet) {
-        return (Pet) petRepository.findByName(name).orElseThrow(()->{
+        return (Pet) petRepository.findByName(name).orElseThrow(() -> {
             return new NoSuchElementException("No pet found ");
         });
     }
